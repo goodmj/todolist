@@ -1,16 +1,4 @@
-<h1>Editing category</h1>
+<% @heading ="Edit Category" %>
 
-<% form_for(@category) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.submit "Update" %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @category %> |
-<%= link_to 'Back', categories_path %>
+<%= render :partial => @category,
+	:locals => { :button_name => "Update"} %>

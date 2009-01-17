@@ -1,0 +1,22 @@
+<% form_for(@category) do |f| %>
+	
+	<%= f.error_messages %>
+	
+	<p>
+		
+		<%= f.label :title %><br />
+		
+		<%= f.text_field :title %><br />
+		
+	</p>
+	
+	<p>
+		
+		<%= f.submit button_name %>
+		
+	</p>
+	
+	<% end %>	
+	
+	<%= link_to 'Back', categories_path %>
+	

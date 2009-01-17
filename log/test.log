@@ -68,3 +68,2701 @@ Rendering template within layouts/tasks
 Rendering tasks/index
 Completed in 6ms (View: 3, DB: 14) | 200 OK [http://www.example.com/tasks]
   [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:27:04', 'task 1', '2009-01-17 19:27:04')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:27:04) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 4) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (11.6ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:32:28', 'task 1', '2009-01-17 19:32:28')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:32:28) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 13) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (10.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:32:28) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 11) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 11:32:28) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 11:32:28) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:32:28', 'go shopping', '2009-01-17 19:32:28')[0m
+Redirected to #<Task:0x4477f80>
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-01-17 11:32:28) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTask Load (1.1ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 2) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks/2]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (12.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:36:11', 'task 1', '2009-01-17 19:36:11')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:36:11) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 8ms (View: 3, DB: 14) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (11.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:36:11) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 12) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 11:36:11) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 11:36:11) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:36:11', 'go shopping', '2009-01-17 19:36:11')[0m
+Redirected to #<Task:0x4466348>
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-01-17 11:36:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 2) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/tasks/2]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:36:11', 'go shopping', '2009-01-17 19:36:11')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:36:11) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:38:20', 'task 1', '2009-01-17 19:38:20')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:38:20) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 3) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:38:20) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 11:38:20) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 11:38:20) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:38:20', 'go shopping', '2009-01-17 19:38:20')[0m
+Redirected to #<Task:0x3f6df44>
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-01-17 11:38:20) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 2) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/tasks/2]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:38:20', 'go shopping', '2009-01-17 19:38:20')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:38:20) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:38:20) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (12.6ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:41:31', 'task 1', '2009-01-17 19:41:31')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:41:31) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 8ms (View: 3, DB: 14) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:41:31) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 3) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 11:41:31) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 11:41:31) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:41:31', 'go shopping', '2009-01-17 19:41:31')[0m
+Redirected to #<Task:0x3f6e098>
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-01-17 11:41:31) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 2) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/tasks/2]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:41:31', 'go shopping', '2009-01-17 19:41:31')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:41:31) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:41:31) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (11.7ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:42:59', 'task 1', '2009-01-17 19:42:59')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:42:59) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 13) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:42:59) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 11:42:59) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 11:42:59) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.4ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:42:59', 'go shopping', '2009-01-17 19:42:59')[0m
+Redirected to #<Task:0x3f6e098>
+Completed in 5ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-01-17 11:42:59) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 2) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/tasks/2]
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:42:59', 'go shopping', '2009-01-17 19:42:59')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:42:59) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:42:59) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (11.9ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:48:55', 'task 1', '2009-01-17 19:48:55')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:48:55) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 6ms (View: 3, DB: 13) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:48:55) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 11:48:55) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 11:48:55) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:48:55', 'go shopping', '2009-01-17 19:48:55')[0m
+Redirected to actionindex
+Completed in 5ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:48:55) [GET]
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:48:55', 'go shopping', '2009-01-17 19:48:55')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:48:55) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:48:55) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (13.4ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:49:24', 'task 1', '2009-01-17 19:49:24')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:49:24) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 6ms (View: 3, DB: 15) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:49:24) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 11:49:24) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 11:49:24) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:49:24', 'go shopping', '2009-01-17 19:49:24')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:49:24) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:49:24', 'go shopping', '2009-01-17 19:49:24')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:49:24) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:49:24) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (12.4ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:51:02', 'task 1', '2009-01-17 19:51:02')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:51:02) [GET]
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 14) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:51:02) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 11:51:02) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 11:51:03) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.4ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:51:03', 'go shopping', '2009-01-17 19:51:03')[0m
+Redirected to actionindex
+Completed in 5ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:51:03) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:51:03', 'go shopping', '2009-01-17 19:51:03')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:51:03) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:51:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:51:03', 'my new task', '2009-01-17 19:51:03')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:51:03) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-01-17 11:51:03) [DELETE]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;35;1mTask Destroy (36.5ms)[0m   [0mDELETE FROM `tasks` WHERE `id` = 4[0m
+Redirected to http://www.example.com/tasks
+Completed in 40ms (DB: 37) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:51:03) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (10.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (14.0ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:52:32', 'task 1', '2009-01-17 19:52:32')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:52:32) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 15) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:52:32) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 11:52:32) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 11:52:32) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:52:32', 'go shopping', '2009-01-17 19:52:32')[0m
+Redirected to actionindex
+Completed in 6ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:52:32) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:52:32', 'go shopping', '2009-01-17 19:52:32')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:52:32) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:52:32) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:52:32', 'my new task', '2009-01-17 19:52:32')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:52:32) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/4 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-01-17 11:52:32) [DELETE]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (8.1ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;35;1mTask Destroy (0.3ms)[0m   [0mDELETE FROM `tasks` WHERE `id` = 4[0m
+Redirected to http://www.example.com/tasks
+Completed in 11ms (DB: 8) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:52:32) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (11.9ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:56:50', 'task 1', '2009-01-17 19:56:50')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:56:50) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 13) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (8.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:56:50) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 9) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 11:56:50) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 11:56:50) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:56:50', 'go shopping', '2009-01-17 19:56:50')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:56:50) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:56:50', 'go shopping', '2009-01-17 19:56:50')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:56:50) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:56:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (22.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:56:50', 'go shopping', '2009-01-17 19:56:50')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:56:50) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 24) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:56:50) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (12.2ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:57:18', 'task 1', '2009-01-17 19:57:18')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:57:18) [GET]
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 14) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:57:18) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 11:57:18) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 11:57:18) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.5ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:57:18', 'go shopping', '2009-01-17 19:57:18')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:57:18) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:57:18', 'go shopping', '2009-01-17 19:57:18')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:57:18) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:57:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:57:18', 'go shopping', '2009-01-17 19:57:18')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:57:18) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:57:18) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 11:57:18) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 19:57:18' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:57:18) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (14.8ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:58:23', 'task 1', '2009-01-17 19:58:23')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:58:23) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 16) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:58:23) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 11:58:23) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 11:58:23) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.4ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:58:23', 'go shopping', '2009-01-17 19:58:23')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:58:23) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:58:23', 'go shopping', '2009-01-17 19:58:23')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:58:23) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:58:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 19:58:23', 'go shopping', '2009-01-17 19:58:23')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:58:23) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 11:58:23) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 11:58:23) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.2ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 19:58:23' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 11:58:23) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (13.8ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:00:57', 'task 1', '2009-01-17 20:00:57')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:00:57) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 15) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (9.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:00:57) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 10) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 12:00:57) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 12:00:57) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:00:57', 'go shopping', '2009-01-17 20:00:57')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:00:57) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:00:57', 'go shopping', '2009-01-17 20:00:57')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:00:57) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:00:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:00:57', 'go shopping', '2009-01-17 20:00:57')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:00:57) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:00:57) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 12:00:57) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 20:00:57' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:00:57) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:00:57', 'task 1', '2009-01-17 20:00:57')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:00:57) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (13.5ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:04:01', 'task 1', '2009-01-17 20:04:01')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:04:01) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 14) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:04:01) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 12:04:01) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 12:04:01) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:04:01', 'go shopping', '2009-01-17 20:04:01')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:04:01) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (45.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:04:01', 'go shopping', '2009-01-17 20:04:01')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:04:01) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 47) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:04:01) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:04:01', 'go shopping', '2009-01-17 20:04:01')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:04:01) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:04:01) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 12:04:01) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 20:04:01' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:04:01) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:04:01', 'task 1', '2009-01-17 20:04:01')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:04:01) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:04:01', 'task 1', '2009-01-17 20:04:01')[0m
+  [4;35;1mTask Create (0.1ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:04:01', 'task 2', '2009-01-17 20:04:01')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:04:01) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:04:01', 'task 1', '2009-01-17 20:04:01')[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:04:01', 'task 2', '2009-01-17 20:04:01')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:04:01) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (12.3ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:17', 'task 1', '2009-01-17 20:06:17')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:17) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 13) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:17) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 12:06:17) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 12:06:17) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:17', 'go shopping', '2009-01-17 20:06:17')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:17) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:17', 'go shopping', '2009-01-17 20:06:17')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:17) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:06:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:17', 'go shopping', '2009-01-17 20:06:17')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:17) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:06:17) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 12:06:17) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.2ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 20:06:17' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:17) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:17', 'task 1', '2009-01-17 20:06:17')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:17) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:17', 'task 1', '2009-01-17 20:06:17')[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:17', 'task 2', '2009-01-17 20:06:17')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:17) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 2) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:17', 'task 1', '2009-01-17 20:06:17')[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:17', 'task 2', '2009-01-17 20:06:17')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:17) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 3, DB: 2) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (15.5ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:44', 'task 1', '2009-01-17 20:06:44')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:44) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 17) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:44) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 12:06:44) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 12:06:44) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:44', 'go shopping', '2009-01-17 20:06:44')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:44) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:44', 'go shopping', '2009-01-17 20:06:44')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:44) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:06:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:44', 'go shopping', '2009-01-17 20:06:44')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:44) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:06:44) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (6.8ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 11ms (View: 3, DB: 7) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 12:06:44) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.2ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 20:06:44' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:44) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:44', 'task 1', '2009-01-17 20:06:44')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:44) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:44', 'task 1', '2009-01-17 20:06:44')[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:44', 'task 2', '2009-01-17 20:06:44')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:44) [GET]
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:44', 'task 1', '2009-01-17 20:06:44')[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:06:44', 'task 2', '2009-01-17 20:06:44')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:06:44) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (13.6ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:07:32', 'task 1', '2009-01-17 20:07:32')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:07:32) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 8ms (View: 3, DB: 15) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:07:32) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 12:07:32) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 12:07:32) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:07:32', 'go shopping', '2009-01-17 20:07:32')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:07:32) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:07:32', 'go shopping', '2009-01-17 20:07:32')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:07:32) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:07:32) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:07:32', 'go shopping', '2009-01-17 20:07:32')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:07:32) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:07:32) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 12:07:32) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.2ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 20:07:32' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:07:32) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:07:32', 'task 1', '2009-01-17 20:07:32')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:07:32) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:07:32', 'task 1', '2009-01-17 20:07:32')[0m
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:07:32', 'task 2', '2009-01-17 20:07:32')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:07:32) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 2) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:07:32', 'task 1', '2009-01-17 20:07:32')[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:07:32', 'task 2', '2009-01-17 20:07:32')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:07:32) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (12.3ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:10:47', 'task 1', '2009-01-17 20:10:47')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:10:48) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 13) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:10:48) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 12:10:48) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 12:10:48) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:10:48', 'go shopping', '2009-01-17 20:10:48')[0m
+Redirected to actionindex
+Completed in 5ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:10:48) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:10:48', 'go shopping', '2009-01-17 20:10:48')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:10:48) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:10:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:10:48', 'go shopping', '2009-01-17 20:10:48')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:10:48) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:10:48) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 12:10:48) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.2ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 20:10:48' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:10:48) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:10:48', 'task 1', '2009-01-17 20:10:48')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:10:48) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (20.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:10:48', 'task 1', '2009-01-17 20:10:48')[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:10:48', 'task 2', '2009-01-17 20:10:48')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:10:48) [GET]
+  [4;36;1mTask Load (1.0ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 5ms (View: 2, DB: 22) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:10:48', 'task 1', '2009-01-17 20:10:48')[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:10:48', 'task 2', '2009-01-17 20:10:48')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:10:48) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (12.8ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:13', 'task 1', '2009-01-17 20:12:13')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:13) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 9ms (View: 4, DB: 14) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (5.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:13) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 6) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 12:12:13) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 12:12:13) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:13', 'go shopping', '2009-01-17 20:12:13')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:13) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:13', 'go shopping', '2009-01-17 20:12:13')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:13) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:12:13) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:13', 'go shopping', '2009-01-17 20:12:13')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:13) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:12:13) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 12:12:13) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 20:12:13' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:13) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:14', 'task 1', '2009-01-17 20:12:14')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:14) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (9.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.4ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:14', 'task 1', '2009-01-17 20:12:14')[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:14', 'task 2', '2009-01-17 20:12:14')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:14) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 11) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (10.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:14', 'task 1', '2009-01-17 20:12:14')[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:14', 'task 2', '2009-01-17 20:12:14')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:14) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 11) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (12.4ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:33', 'task 1', '2009-01-17 20:12:33')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:33) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 6ms (View: 3, DB: 13) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:33) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 12:12:33) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 12:12:33) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:33', 'go shopping', '2009-01-17 20:12:33')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:33) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:33', 'go shopping', '2009-01-17 20:12:33')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:33) [GET]
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:12:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:33', 'go shopping', '2009-01-17 20:12:33')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:33) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:12:33) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 12:12:33) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.2ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 20:12:33' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:33) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:33', 'task 1', '2009-01-17 20:12:33')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:33) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (2.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:33', 'task 1', '2009-01-17 20:12:33')[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:33', 'task 2', '2009-01-17 20:12:33')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:33) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 3) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:33', 'task 1', '2009-01-17 20:12:33')[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:12:33', 'task 2', '2009-01-17 20:12:33')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:12:33) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 2) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (13.2ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:13:47', 'task 1', '2009-01-17 20:13:47')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:13:47) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 8ms (View: 3, DB: 14) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (4.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:13:47) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 5) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 12:13:47) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 12:13:47) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:13:47', 'go shopping', '2009-01-17 20:13:47')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:13:47) [GET]
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:13:47', 'go shopping', '2009-01-17 20:13:47')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:13:47) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:13:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (4.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:13:47', 'go shopping', '2009-01-17 20:13:47')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:13:47) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 5) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:13:47) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 12:13:47) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.4ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 20:13:47' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:13:47) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:13:47', 'task 1', '2009-01-17 20:13:47')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:13:47) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:13:47', 'task 1', '2009-01-17 20:13:47')[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:13:47', 'task 2', '2009-01-17 20:13:47')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:13:47) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:13:47', 'task 1', '2009-01-17 20:13:47')[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:13:47', 'task 2', '2009-01-17 20:13:47')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:13:47) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (13.4ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:03', 'task 1', '2009-01-17 20:14:03')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 14) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 12:14:03) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.4ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:03', 'go shopping', '2009-01-17 20:14:03')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (5.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:03', 'go shopping', '2009-01-17 20:14:03')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 6) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:03', 'go shopping', '2009-01-17 20:14:03')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 12:14:03) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.2ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 20:14:03' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:03', 'task 1', '2009-01-17 20:14:03')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/5 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-01-17 12:14:03) [DELETE]
+  Parameters: {"id"=>"5"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 5) [0m
+  [4;35;1mTask Destroy (0.2ms)[0m   [0mDELETE FROM `tasks` WHERE `id` = 5[0m
+Redirected to http://www.example.com/tasks
+Completed in 2ms (DB: 0) | 302 Found [http://www.example.com/tasks/5]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:03', 'task 1', '2009-01-17 20:14:03')[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:03', 'task 2', '2009-01-17 20:14:03')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 2) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/6 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-01-17 12:14:03) [DELETE]
+  Parameters: {"id"=>"6"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 6) [0m
+  [4;35;1mTask Destroy (0.2ms)[0m   [0mDELETE FROM `tasks` WHERE `id` = 6[0m
+Redirected to http://www.example.com/tasks
+Completed in 3ms (DB: 1) | 302 Found [http://www.example.com/tasks/6]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:03', 'task 1', '2009-01-17 20:14:03')[0m
+  [4;36;1mTask Create (0.1ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:03', 'task 2', '2009-01-17 20:14:03')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/8 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-01-17 12:14:03) [DELETE]
+  Parameters: {"id"=>"8"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 8) [0m
+  [4;35;1mTask Destroy (0.2ms)[0m   [0mDELETE FROM `tasks` WHERE `id` = 8[0m
+Redirected to http://www.example.com/tasks
+Completed in 3ms (DB: 1) | 302 Found [http://www.example.com/tasks/8]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:03) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (13.9ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:31', 'task 1', '2009-01-17 20:14:31')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 7ms (View: 3, DB: 15) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 12:14:31) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:31', 'go shopping', '2009-01-17 20:14:31')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:31', 'go shopping', '2009-01-17 20:14:31')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:31', 'go shopping', '2009-01-17 20:14:31')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 12:14:31) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 20:14:31' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:31', 'task 1', '2009-01-17 20:14:31')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/5 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-01-17 12:14:31) [DELETE]
+  Parameters: {"id"=>"5"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 5) [0m
+  [4;35;1mTask Destroy (0.2ms)[0m   [0mDELETE FROM `tasks` WHERE `id` = 5[0m
+Redirected to http://www.example.com/tasks
+Completed in 3ms (DB: 1) | 302 Found [http://www.example.com/tasks/5]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:31', 'task 1', '2009-01-17 20:14:31')[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:31', 'task 2', '2009-01-17 20:14:31')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/6 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-01-17 12:14:31) [DELETE]
+  Parameters: {"id"=>"6"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 6) [0m
+  [4;35;1mTask Destroy (0.2ms)[0m   [0mDELETE FROM `tasks` WHERE `id` = 6[0m
+Redirected to http://www.example.com/tasks
+Completed in 3ms (DB: 0) | 302 Found [http://www.example.com/tasks/6]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:31) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:32', 'task 1', '2009-01-17 20:14:32')[0m
+  [4;36;1mTask Create (0.8ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:14:32', 'task 2', '2009-01-17 20:14:32')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:32) [GET]
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 2) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/8 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-01-17 12:14:32) [DELETE]
+  Parameters: {"id"=>"8"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 8) [0m
+  [4;35;1mTask Destroy (0.2ms)[0m   [0mDELETE FROM `tasks` WHERE `id` = 8[0m
+Redirected to http://www.example.com/tasks
+Completed in 3ms (DB: 1) | 302 Found [http://www.example.com/tasks/8]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:14:32) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Columns (12.5ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:18:04', 'task 1', '2009-01-17 20:18:04')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:18:04) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 8ms (View: 3, DB: 14) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (6.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:18:04) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 7) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-01-17 12:18:04) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"go shopping"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-01-17 12:18:04) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"description"=>"go shopping"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:18:04', 'go shopping', '2009-01-17 20:18:04')[0m
+Redirected to actionindex
+Completed in 4ms (DB: 0) | 302 Found [http://www.example.com/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:18:04) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (9.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.4ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:18:04', 'go shopping', '2009-01-17 20:18:04')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:18:04) [GET]
+  [4;36;1mTask Load (0.5ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 11) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/3/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:18:04) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/3/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:18:04', 'go shopping', '2009-01-17 20:18:04')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:18:04) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/4/edit with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-01-17 12:18:04) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/tasks/4/edit]
+REQUESTING PAGE: POST /tasks/4 with {"commit"=>"Update", "_method"=>"put", "task"=>{"description"=>"buy bagels"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/4/edit"}
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-01-17 12:18:04) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"4", "task"=>{"description"=>"buy bagels"}}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 4) [0m
+  [4;36;1mTask Update (0.2ms)[0m   [0;1mUPDATE `tasks` SET `description` = 'buy bagels', `updated_at` = '2009-01-17 20:18:04' WHERE `id` = 4[0m
+Redirected to actionindex
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:18:05) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (18.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:18:05', 'task 1', '2009-01-17 20:18:05')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:18:05) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 20) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Load (36.8ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`description` = 'task 1') LIMIT 1[0m
+REQUESTING PAGE: DELETE /tasks/5 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-01-17 12:18:05) [DELETE]
+  Parameters: {"id"=>"5"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 5) [0m
+  [4;36;1mTask Destroy (0.2ms)[0m   [0;1mDELETE FROM `tasks` WHERE `id` = 5[0m
+Redirected to http://www.example.com/tasks
+Completed in 3ms (DB: 37) | 302 Found [http://www.example.com/tasks/5]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:18:05) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:18:05', 'task 1', '2009-01-17 20:18:05')[0m
+  [4;35;1mTask Create (0.2ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:18:05', 'task 2', '2009-01-17 20:18:05')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:18:05) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`description` = 'task 1') LIMIT 1[0m
+REQUESTING PAGE: DELETE /tasks/6 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-01-17 12:18:05) [DELETE]
+  Parameters: {"id"=>"6"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 6) [0m
+  [4;35;1mTask Destroy (0.2ms)[0m   [0mDELETE FROM `tasks` WHERE `id` = 6[0m
+Redirected to http://www.example.com/tasks
+Completed in 3ms (DB: 1) | 302 Found [http://www.example.com/tasks/6]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:18:05) [GET]
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;35;1mSQL (6.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (7.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:18:05', 'task 1', '2009-01-17 20:18:05')[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO `tasks` (`updated_at`, `description`, `created_at`) VALUES('2009-01-17 20:18:05', 'task 2', '2009-01-17 20:18:05')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:18:05) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 86ms (View: 2, DB: 15) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM `tasks` WHERE (`tasks`.`description` = 'task 2') LIMIT 1[0m
+REQUESTING PAGE: DELETE /tasks/9 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-01-17 12:18:05) [DELETE]
+  Parameters: {"id"=>"9"}
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM `tasks` WHERE (`tasks`.`id` = 9) [0m
+  [4;36;1mTask Destroy (0.2ms)[0m   [0;1mDELETE FROM `tasks` WHERE `id` = 9[0m
+Redirected to http://www.example.com/tasks
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/tasks/9]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-01-17 12:18:05) [GET]
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM `tasks` [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m

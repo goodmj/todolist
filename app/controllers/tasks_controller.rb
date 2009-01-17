@@ -10,17 +10,6 @@ class TasksController < ApplicationController
     end
   end
 
-  # GET /tasks/1
-  # GET /tasks/1.xml
-  def show
-    @task = Task.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @task }
-    end
-  end
-
   # GET /tasks/new
   # GET /tasks/new.xml
   def new
@@ -45,7 +34,7 @@ class TasksController < ApplicationController
     respond_to do |format|
       if @task.save
         flash[:notice] = 'Task was successfully created.'
-        format.html { redirect_to(@task) }
+        format.html { redirect_to :action => "index" }
         format.xml  { render :xml => @task, :status => :created, :location => @task }
       else
         format.html { render :action => "new" }
@@ -62,7 +51,7 @@ class TasksController < ApplicationController
     respond_to do |format|
       if @task.update_attributes(params[:task])
         flash[:notice] = 'Task was successfully updated.'
-        format.html { redirect_to(@task) }
+        format.html { redirect_to :action => "index" }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
